@@ -7,16 +7,11 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-    
-    <bean class="com.springcore.ref.B" name="bref">
-    	<property name="y" value="90"/>
-    </bean>
-    <bean class="com.springcore.ref.A" name="aref">
-    	<property name="x" value="50"/>
-<!--    <property name="x" value="50"></property> -->
-    	<!-- <property name="ob">
-    		<ref bean="bref"/>
-    	</property> -->
-    	<property name="ob" ref="bref"/>
-    </bean>
+
+	<bean class="com.springcore.auto.wire.Address" name="address">
+		<property name="street" value="Temp Street"></property>
+		<property name="city" value="Delhi"></property>
+	</bean>
+	<bean class="com.springcore.auto.wire.Emp" name="emp1" autowire="byName"/>
+
 </beans>

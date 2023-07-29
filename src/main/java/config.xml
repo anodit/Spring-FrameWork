@@ -9,9 +9,9 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<bean class="com.springcore.Student" name="student1">
-		<!-- <property name="studentId"> <value>12345</value> </property> <property 
-			name="studentName"> <value>Mohit Kumar</value> </property> <property name="studentAddress"> 
-			<value>Delhi</value> </property> -->
+		<!-- <property name="studentId"> <value>12345</value> </property> 
+		<property name="studentName"> <value>Mohit Kumar</value> </property> 
+		<property name="studentAddress"> <value>Delhi</value> </property> -->
 		<property name="studentId" value="898" />
 		<property name="studentName" value="Mohit" />
 		<property name="studentAddress" value="Dwarka" />
@@ -22,4 +22,5 @@
 		<property name="studentAddress" value="Kakrola" />
 	</bean>
 	<bean class="com.springcore.Student" name="student3" p:studentId="1254" p:studentName="Rohit" p:studentAddress="Vipin Garden"/>
+	<bean class="com.springcore.Student" name="student4" p:studentId="34433" p:studentName="Arpan" p:studentAddress="Bajaj Enclave"/>
 </beans>
