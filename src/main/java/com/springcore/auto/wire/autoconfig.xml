@@ -12,6 +12,10 @@
 		<property name="street" value="Temp Street"></property>
 		<property name="city" value="Delhi"></property>
 	</bean>
-	<bean class="com.springcore.auto.wire.Emp" name="emp1" autowire="byType"/>
+	<bean class="com.springcore.auto.wire.Address" name="address">
+		<property name="street" value="Second Street"></property>
+		<property name="city" value="Kanpur"></property>
+	</bean>
+	<bean class="com.springcore.auto.wire.Emp" name="emp1" autowire="constructor"/>
 
 </beans>
