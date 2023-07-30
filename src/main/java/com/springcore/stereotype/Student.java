@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("ob")
 public class Student {
 	@Value("Mohit Kumar")
 	private String studentName;
@@ -34,6 +34,7 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		return "Student [studentName=" + studentName + ", city=" + city + "]";
+		return "Student [studentName=" + studentName + ", city=" + city + ", address=" + address + "]";
 	}
+	
 }
