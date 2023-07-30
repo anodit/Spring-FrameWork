@@ -17,4 +17,5 @@
 		<value>Delhi</value>
 		<value>Kanpur</value>
 	</util:list>
+	<bean class="com.springcore.stereotype.Teacher" name="teacher" scope="prototype"/>
 </beans>

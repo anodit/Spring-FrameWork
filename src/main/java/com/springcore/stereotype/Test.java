@@ -12,5 +12,11 @@ public class Test {
 		System.out.println(student1.getAddress());
 		System.out.println(student1.hashCode());
 		System.out.println(student2.hashCode());
+		System.out.println("************************");
+		Teacher teacher1 = context.getBean("teacher",Teacher.class);
+		Teacher teacher2 = context.getBean("teacher",Teacher.class);
+		System.out.println(teacher1.hashCode());
+		System.out.println(teacher2.hashCode());
+			
 	}
 }
